@@ -1,0 +1,7 @@
+<section style="border: 1px solid red; margin: 10px; padding: 10px;">
+    <h1>Child</h1>
+    <p>{{ fromParent }}</p>
+    <label>Send to parent</label>
+    <input type="password" [(ngModel)]='inputText'/>
+    <button (click)='sendToParent()'>Send data to parent</button>
+</section>

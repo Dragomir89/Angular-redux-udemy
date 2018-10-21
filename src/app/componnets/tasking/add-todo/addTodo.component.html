@@ -1,0 +1,15 @@
+<form style="display: inline-block; border: 1px solid red; width: 45%" (ngSubmit)="submitTodo()">
+    <div>
+        <label>Add Todo</label>
+        <input 
+            type="text"
+            name = 'newTodo'    
+            [(ngModel)]="newTodo"/>
+    </div>
+    <button type="submit"> Add </button>
+</form>
+<div>
+    <ul>
+        <li *ngFor="let todo of todos">{{ todo }}</li>
+    </ul>
+</div>

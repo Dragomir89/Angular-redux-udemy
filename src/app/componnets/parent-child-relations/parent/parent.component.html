@@ -1,0 +1,8 @@
+<section style="border: 1px solid blue; margin: 10px; padding: 10px;">
+    <h1>Parent</h1>
+    <h3>{{fromChild}}</h3>
+    <app-child 
+        [fromParent]='forChild' 
+        (forParentEvent)='receiveDataFromChild($event)'>
+    </app-child>
+</section>
